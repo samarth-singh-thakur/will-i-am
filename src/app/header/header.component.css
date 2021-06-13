@@ -1,0 +1,20 @@
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.rounded-circle{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+.appname{
+    font-family: 'Dancing Script', cursive;
+}
+.my{
+    font-size: 45px;;
+}
+.quote{
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
+}
