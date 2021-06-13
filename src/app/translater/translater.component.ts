@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { TranslaterService } from '../services/translater.service';
 @Component({
   selector: 'shakespeare-translater',
   templateUrl: './translater.component.html',
@@ -9,11 +9,13 @@ export class TranslaterComponent {
   englishText: String = "";
   shakespeareText: String = "";
 
-  constructor() { }
+  constructor(private translate: TranslaterService) { }
 
-  clicked() {
-    this.shakespeareText = this.englishText;
-    // do nothing for now
+  clicked(): void {
+    this.translate.gettranslation(this.englishText).subscribe({
+      next: result => this.shakespeareText = result.contents.translated,
+      error: err => console.log(err)
+    });
   }
 
 }
