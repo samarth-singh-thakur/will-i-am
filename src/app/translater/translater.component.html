@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <div class="heading">
+                    <label for="field">Text in English</label>
+                    <hr>
+                    <textarea [(ngModel)]="englishText" rows="6" cols="50"></textarea><br>
+                    <button (click)='clicked()' class="btn btn-primary mybutt">Translateth</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="heading">
+                <label for="field">Translated Text</label>
+                <hr>
+                <p class="quote">{{shakespeareText}}</p>
+            </div>
+        </div>
+    </div>
+</div>
