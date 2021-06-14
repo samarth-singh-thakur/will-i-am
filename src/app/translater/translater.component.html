@@ -20,3 +20,23 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <hr>
+    <p class="display-4">Saved Translations </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">English</th>
+                <th scope="col">Translated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let e of ar'>
+                <td>{{e.eng}}</td>
+                <td>{{e.translated}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
