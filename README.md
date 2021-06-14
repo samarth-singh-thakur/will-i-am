@@ -1,6 +1,6 @@
 # WillIAm
 will-i-am is a basic angular app to translate plain English to fun Shakespeare English using the API.
-![Alt Text](screenshots\demo.gif)
+![Alt Text](screenshots/demo.gif)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
 ## Development server
